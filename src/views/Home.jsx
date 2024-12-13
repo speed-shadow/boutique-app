@@ -1,4 +1,3 @@
-import React from 'react';
 import AddModelForm from '../components/AddModelForm';
 import logOut from '../functions/logOut';
 

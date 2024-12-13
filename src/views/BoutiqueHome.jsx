@@ -1,9 +1,12 @@
-import React from "react";
+import Navbar from '../components/Navbar';
 
-function BoutiqueHome(){
-    return(
-        <div className="w-screen h-screen flex justify-center items-center">
-           <h1>Este es el Home de las modelos</h1>
+function BoutiqueHome() {
+    return (
+        <div className="w-screen h-screen">
+            <Navbar />
+            <div>
+                <h1>Este es el Home de las modelos</h1>
+            </div>
         </div>
     );
 }
