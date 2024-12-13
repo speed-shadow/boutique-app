@@ -26,7 +26,6 @@ export default function Navbar() {
             <div className="flex flex-row gap-10 items-center">
                 <Link to={'/'}>Logo</Link>
                 <div className="relative inline-block text-left">
-                    {/* TODO: MEJORAR LOS DROPDOWN MENU */}
                     {/* Botón del menú */}
                     <button
                         id="dropdownDefaultButton"
