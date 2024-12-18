@@ -4,10 +4,7 @@ import { getFirestore, collection, getDocs } from "firebase/firestore";
 // Inicializa Firestore
 const db = getFirestore();
 
-/**
- * Función para obtener y mapear los datos de la colección 'attributes' en Firebase.
- * @returns {Promise<Array<{ id: string, name: string }>>} Lista de atributos.
- */
+//helper para atributos
 export const getAttributesForCheckboxes = async () => {
   try {
     // Referencia a la colección 'attributes'

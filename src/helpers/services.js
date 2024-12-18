@@ -5,7 +5,7 @@ import { getFirestore, collection, getDocs } from "firebase/firestore";
 const db = getFirestore();
 
 /**
- * Función para obtener y mapear los datos de la colección 'services' en Firebase.
+ * helper para obtener y mapear los datos de la colección 'services' en Firebase.
  * @returns {Promise<Array<{ id: string, name: string }>>} Lista de servicios.
  */
 export const getServicesForCheckboxes = async () => {

@@ -4,10 +4,7 @@ import { getFirestore, collection, getDocs } from "firebase/firestore";
 // Inicializa Firestore
 const db = getFirestore();
 
-/**
- * Función para obtener y mapear los datos de la colección 'citys' en Firebase.
- * @returns {Promise<Array<{ id: string, name: string }>>} Lista de ciudades.
- */
+//helper de mapeo para las ciudades
 export const getCitysForSelect = async () => {
   try {
     // Referencia a la colección 'citys'
