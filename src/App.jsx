@@ -1,11 +1,12 @@
-import { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import './styles/tailwind.css';
-import { auth } from './firebase/firebaseConfig';
 import { onAuthStateChanged } from 'firebase/auth';
+import { useEffect, useState } from 'react';
+import { Navigate, Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import AddModelForm from './components/AddModelForm';
+import { auth } from './firebase/firebaseConfig';
+import './styles/tailwind.css';
+import BoutiqueHome from './views/BoutiqueHome';
 import Home from './views/Home';
 import Login from './views/Login';
-import BoutiqueHome from './views/BoutiqueHome';
 
 function App() {
   const [user, setUser] = useState(null);
@@ -35,7 +36,9 @@ function App() {
         <Route
           path="/home"
           element={user ? <Home user={user} /> : <Navigate to="/login" />}
-        />
+        >
+          <Route path='addModel' element={<AddModelForm/>}></Route>
+        </Route>
         {/* Ruta por defecto/redirección (envia a inicio de la web)*/}
         <Route
           path="/"
