@@ -7,6 +7,7 @@ import './styles/tailwind.css';
 import BoutiqueHome from './views/BoutiqueHome';
 import Home from './views/Home';
 import Login from './views/Login';
+import GetAllModels from './components/GetAllModels';
 
 function App() {
   const [user, setUser] = useState(null);
@@ -38,6 +39,7 @@ function App() {
           element={user ? <Home user={user} /> : <Navigate to="/login" />}
         >
           <Route path='addModel' element={<AddModelForm/>}></Route>
+          <Route path='getAllModels' element={<GetAllModels/>}></Route>
         </Route>
         {/* Ruta por defecto/redirección (envia a inicio de la web)*/}
         <Route

@@ -101,7 +101,7 @@ function AddModelForm() {
         const whatsapp = e.target.whatsapp.value;
         const twitter = e.target.twitter.value;
         const measures = e.target.measures.value;
-        const phone = e.target.phone.value;
+       /*  const phone = e.target.phone.value; */
         const height = e.target.height.value;
         const weight = e.target.weight.value;
         const description = e.target.description.value;
@@ -118,7 +118,7 @@ function AddModelForm() {
             measures,
             description,
             age,
-            phone,
+           /*  phone, */
             height,
             weight,
         };
@@ -132,7 +132,7 @@ function AddModelForm() {
             e.target.whatsapp.value =
             e.target.twitter.value =
             e.target.measures.value =
-            e.target.phone.value =
+            /* e.target.phone.value = */
             e.target.height.value =
             e.target.weight.value =
             e.target.description.value =

@@ -18,6 +18,14 @@ function Home() {
                                 Agregar Modelo
                             </Link>
                         </li>
+                        <li>
+                            <Link
+                                to={'getAllModels'}
+                                className="block py-2 px-4 rounded hover:bg-gray-700 transition"
+                            >
+                                Listar Modelos
+                            </Link>
+                        </li>
                     </ul>
                     <ul>
                         <li>
