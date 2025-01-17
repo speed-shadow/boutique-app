@@ -101,7 +101,7 @@ function AddModelForm() {
         const whatsapp = e.target.whatsapp.value;
         const twitter = e.target.twitter.value;
         const measures = e.target.measures.value;
-       /*  const phone = e.target.phone.value; */
+        const phone = e.target.phone.value;
         const height = e.target.height.value;
         const weight = e.target.weight.value;
         const description = e.target.description.value;
@@ -118,7 +118,7 @@ function AddModelForm() {
             measures,
             description,
             age,
-           /*  phone, */
+            phone,
             height,
             weight,
         };
@@ -132,7 +132,7 @@ function AddModelForm() {
             e.target.whatsapp.value =
             e.target.twitter.value =
             e.target.measures.value =
-            /* e.target.phone.value = */
+            e.target.phone.value =
             e.target.height.value =
             e.target.weight.value =
             e.target.description.value =
@@ -241,6 +241,21 @@ function AddModelForm() {
                             type="text"
                             placeholder="Escribe tu peso..."
                             className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                        />
+                    </div>
+                    {/* TELEFONO */}
+                    <div className="flex flex-col items-start">
+                        <label
+                            htmlFor="input"
+                            className="mb-2 text-sm font-medium text-gray-700"
+                        >
+                            Telefono:
+                        </label>
+                        <input
+                            id="phone"
+                            type="text"
+                            placeholder="Escribe tu descripcion..."
+                            className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 resize-none"
                         />
                     </div>
                     {/* DESCRIPCION */}
