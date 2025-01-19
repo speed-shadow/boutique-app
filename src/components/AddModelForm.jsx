@@ -140,7 +140,7 @@ function AddModelForm() {
     }
     // TODO: AGREGAR ICONOS PARA QUE SEA MAS FACIL DE ENTENDER
     return (
-        <>
+        <div className='mx-10'>
             <form onSubmit={submitHandler}>
                 <h1 className="text-center text-2xl font-bold my-5">
                     INFORMACION PERSONAL
@@ -609,7 +609,7 @@ function AddModelForm() {
                     </button>
                 </form>
             </div> */}
-        </>
+        </div>
     );
 }
 

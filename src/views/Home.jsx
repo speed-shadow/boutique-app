@@ -4,7 +4,7 @@ import logOut from '../functions/logOut';
 function Home() {
     return (
         <div className="flex min-h-screen bg-gray-100">
-            <aside className="w-64 bg-gray-800 text-white flex flex-col">
+            <aside className="w-1/5 bg-gray-800 text-white flex flex-col">
                 <div className="p-4 text-center font-bold text-xl border-b border-gray-700">
                     Bienvenido Administrador
                 </div>
@@ -42,10 +42,8 @@ function Home() {
                     © 2024 My Dashboard
                 </footer>
             </aside>
-            <main className="flex-1 p-6">
-                <div className="flex justify-center">
-                    <Outlet />
-                </div>
+            <main className="flex-1 p-6 w-4/5">
+                <Outlet />
             </main>
         </div>
     );
